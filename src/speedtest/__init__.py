@@ -11,12 +11,10 @@ import time
 from dataclasses import dataclass, replace
 from enum import Enum
 from functools import cached_property
-from typing import Any
+from typing import Any, assert_never
 from urllib.parse import urlparse
 
 import httpx
-
-from typing import assert_never
 
 
 class OutputFormat(str, Enum):

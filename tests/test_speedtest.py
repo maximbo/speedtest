@@ -6,8 +6,7 @@ import csv
 import io
 import json
 import socket
-import sys
-from typing import Iterator
+from collections.abc import Iterator
 
 import httpx
 import pytest
@@ -27,7 +26,6 @@ from speedtest import (
     resolve_with_timing,
     run_benchmark,
 )
-
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Фикстуры
